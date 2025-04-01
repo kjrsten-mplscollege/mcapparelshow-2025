@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BluePrint</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/logos/favicon.ico" type="image/x-icon">
+    <script src="./js/app.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./images/logos/blueprint-logo-text.svg" alt="BluePrint Text Logo" id="logo-text" onclick="handleClick('./index.html')">
+            <img src="./images/icons/mobile-lines.svg" onclick="handleNavToggle()" id="mobile-lines">
+        </div>
+        <div id="navbar">
+            <ul>
+                <li onclick="handleClick('./index.html#designers')">Designers</li>
+                <li onclick="handleClick('./show.html')">Show</li>
+                <li onclick="handleClick('./credits.html')">Credits</li>
+            </ul>
+        </div>
+        <img src="./images/background-image/needle.svg" alt="Needle" id="needle">
+    </header>
+
+
+    <h1 id="credits-title">Apparel Technologies would like to thank:</h1>
+    <div id="credits">
+        <div class="column">
+            <h2>Dean of School of Design and the Arts</h2>
+            <ul>
+                <li>Kristine Gyolai</li>
+            </ul>
+            <h2>Photography and Motion:</h2>
+            <ul>
+                <li>Paul Owen</li>
+                <li>Kristine Heykants</li>
+                <li>Kendall LaCroix</li>
+                <li>Marilyn Indahl</li>
+                <li>Photography & Motion Students</li>
+            </ul>
+            <h2>Web Design & Front-End Development:</h2>
+            <ul>
+                <li>Carl Namyst</li>
+                <li>James LeVoir</li>
+                <li>Christina Chacon</li>
+            </ul>
+            <h2>Livestreaming & Video:</h2>
+            <ul>
+                <li>Brian Heller</li>
+                <li>Randy Johnson</li>
+                <li>Gregg Kubera</li>
+                <li>Kara Hageman</li>
+                <li>Emery Snow</li>
+                <li>Sound Arts and Photography and Motion Programs</li>
+            </ul>
+            <h2>Emcee:</h2>
+            <ul>
+                <li>Faith Bohn</li>
+            </ul>
+            <h2>Jazz Ensemble:</h2>
+            <ul>
+                <li>Joel Sundseth</li>
+                <li>Minneapolis College Jazz Ensemble Students</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Assistant to the Dean</h2>
+            <ul>
+                <li>Josh Gorski</li>
+            </ul>
+            <h2>Lights</h2>
+            <ul>
+                <li>EMI</li>
+            </ul>
+            <h2>Music</h2>
+            <ul>
+                <li>Joe Woodling</li>
+            </ul>
+            <h2>Graphic Design</h2>
+            <ul>
+                <li>Jazmine Lee</li>
+            </ul>
+            <h2>Choreography</h2>
+            <ul>
+                <li>Brittany Jimerson</li>
+            </ul>
+            <h2>Hair and Makeup</h2>
+            <ul>
+                <li>Spalon Montage</li>
+                <li>Nonny Perry</li>
+            </ul>
+            <h2>Teaching Assistant:</h2>
+            <ul>
+                <li>James Nelson</li>
+            </ul>
+            <h2>Central Scheduling:</h2>
+            <ul>
+                <li>Minneapolis College Facilities</li>
+            </ul>
+        </div>
+    </div>
+    <div id="credits-footer">A SPECIAL THANKS TO OUR MODELS AND STYLISTS, FRIENDS AND FAMILY FOR ALL THEIR SUPPORT.</div>
+
+
+    <footer>
+        <h1>PAST SHOWS</h1>
+        <ul>
+            <li onclick="handleClick('https://2023.mcappareltechnologies.com/')">2023</li>
+            <li onclick="handleClick('https://2022.mcappareltechnologies.com/')">2022</li>
+            <li onclick="handleClick('https://2021.mcappareltechnologies.com/')">2021</li>
+            <li onclick="handleClick('https://tempus.mcappareltechnologies.com/')">2020</li>
+            <li onclick="handleClick('https://intothefray.mcappareltechnologies.com/index.html')">2019</li>
+            <li onclick="handleClick('https://thirteen.mcappareltechnologies.com/index.html')">2018</li>
+            <li onclick="handleClick('https://equinox.mcappareltechnologies.com/')">2017</li>
+        </ul>
+        <a href="https://minneapolis.edu/" target="_blank"><img src="./images/logos/mc-logo-black.svg" alt="Minneapolis College Logo" id="school-logo"></a>
+    </footer>
+</body>
+</html>
