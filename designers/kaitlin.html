@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BluePrint</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../js/app.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../images/logos/blueprint-logo-text.svg" alt="BluePrint Text Logo" id="logo-text" onclick="handleClick('../index.html')">
+            <img src="../images/icons/mobile-lines.svg" onclick="handleNavToggle()" id="mobile-lines">
+        </div>
+        <div id="navbar">
+            <ul>
+                <li onclick="handleClick('../index.html#designers')">Designers</li>
+                <li onclick="handleClick('../show.html')">Show</li>
+                <li onclick="handleClick('../credits.html')">Credits</li>
+            </ul>
+        </div>
+        <img src="../images/background-image/needle.svg" alt="Needle" id="needle">
+    </header>
+
+    <div id="designer-page">
+        <h1 id="name">Kaitlin Schiltz </h1>
+        <h2 id="collection-name">Only Human</h2>
+        <div id="collection-gallery">
+            <div class="container">
+                <img src="../images/garments/kat/Kat_Schiltz_1.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">Model Keyah Mizer poses in an asymmetrical shift dress inspired by the practice of honoring and respecting an animal by utilizing every part of its body.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../images/garments/kat/Kat_Schiltz_2.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">Made of durable bull denim, the dress features flat felled princess seams, a dropped waist, and an appliqued leather remnant whose raw edges deviate from the classic silhouette.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../images/garments/kat/Kat_Schiltz_3.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">Turning hide into leather is one of the oldest forms of recycling. Using scrap leather that would otherwise be burned or sent to a landfill helps to close the loop between resource-intensive fabric production and growing piles of textile waste.</p>
+                </div>
+            </div>
+        </div>
+        <div id="flex-horizontal">
+            <img src="../images/designers/Kat.jpg" alt="Kaitlin" id="designer-headshot">
+            <div id="flex-vertical">
+                <div id="bio">
+                    <h2>Designer Bio</h2>
+                    <p>With a lineage steeped in art and nature, the seeds of boundless creativity were sown early and nurtured for Kaitlin’s life. Her upbringing instilled a profound appreciation for innovation, cultural heritage, and the importance of honoring one’s roots while embracing new horizons. Kat’s schooling reflected her interest in diverse fields and her unhappiness with strict boundaries and programs, as she bounced from the University of Minnesota Duluth to Minneapolis College. She studied not only apparel, but also psychology, art education and graphic design. Each bend revealed a new facet of her artistic soul, and it was the world of fashion where Kaitlin’s passion for creativity and self-expression found its perfect canvas. As Kat reflects on her journey and the diverse influences that have shaped her, she finds herself invigorated by a commitment to learning and exploration. With a love for experimentation and a keen interest in the materials that breathe life into clothing, she delves deeper into the realm of fashion and the significance behind individuals' clothing choices. Armed with a desire for knowledge and a creative spirit, Kaitlin embraces the opportunities that lie ahead, eager to continue her odyssey of discovery and innovation in the world of textiles and the psychology of expression through fashion.</p>
+                </div>
+                <div id="statement">
+                    <h2>Designer Statement</h2>
+                    <p>Ambivalence is rarely cast as a positive in our culture. My collection “Only Human” challenges this narrative by exploring the intricate nuances of moral ambiguity. As an artist and designer, I aim to defy societal norms and spark contemplation, curiosity, and empathy in those who encounter my work. Each garment is crafted with meticulous attention to detail, utilizing a blend of textures, colors, and silhouettes to evoke a sense of intrigue and uncertainty. By blurring the lines between right and wrong, good and bad, my creations invite viewers to question their own beliefs and perspectives, compelling them to engage with the deeper narratives woven into each piece. “Only Human” serves as a catalyst for introspection and dialogue, encouraging individuals to explore ethics, identity, and the essence of beauty in an imperfect world.</p>
+                </div>
+                <div id="contact-info">
+                    <a href="https://www.instagram.com/kaitlinschiltz" target="_blank" class="instagram">@kaitlinschiltz</a>
+                    <a href="mailto:katmschiltz@gmail.com" target="_blank" class="email">katmschiltz@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <h1>PAST SHOWS</h1>
+        <ul>
+            <li onclick="handleClick('https://2023.mcappareltechnologies.com/')">2023</li>
+            <li onclick="handleClick('https://2022.mcappareltechnologies.com/')">2022</li>
+            <li onclick="handleClick('https://2021.mcappareltechnologies.com/')">2021</li>
+            <li onclick="handleClick('https://tempus.mcappareltechnologies.com/')">2020</li>
+            <li onclick="handleClick('https://intothefray.mcappareltechnologies.com/index.html')">2019</li>
+            <li onclick="handleClick('https://thirteen.mcappareltechnologies.com/index.html')">2018</li>
+            <li onclick="handleClick('https://equinox.mcappareltechnologies.com/')">2017</li>
+        </ul>
+        <a href="https://minneapolis.edu/" target="_blank"><img src="../images/logos/mc-logo-black.svg" alt="Minneapolis College Logo" id="school-logo"></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BluePrint</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../js/app.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../images/logos/blueprint-logo-text.svg" alt="BluePrint Text Logo" id="logo-text" onclick="handleClick('../index.html')">
+            <img src="../images/icons/mobile-lines.svg" onclick="handleNavToggle()" id="mobile-lines">
+        </div>
+        <div id="navbar">
+            <ul>
+                <li onclick="handleClick('../index.html#designers')">Designers</li>
+                <li onclick="handleClick('../show.html')">Show</li>
+                <li onclick="handleClick('../credits.html')">Credits</li>
+            </ul>
+        </div>
+        <img src="../images/background-image/needle.svg" alt="Needle" id="needle">
+    </header>
+
+    <div id="designer-page">
+        <h1 id="name">Ruby Bramm-Baktis</h1>
+        <h2 id="collection-name">Cedar Chest</h2>
+        <div id="collection-gallery">
+            <div class="container">
+                <img src="../images/garments/ruby/Ruby_Bramm-Baktis_1.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">Model Vea Mendes poses wearing a matched set of an orange quilted vest layered over a yellow knit midi dress, complete with matching socks. Make-up by Denaisha Motley and hair by Nonny Perry.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../images/garments/ruby/Ruby_Bramm-Baktis_2.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">The vest is constructed from a hand-made quilt found at the Salvation Army donation bins. It has an oversized, boxy fit and features a high mandarin collar. The original quilt border remains intact: its gentle scalloped edge is used as the hem of the vest, complimenting the soft curves of the quilt pattern.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../images/garments/ruby/Ruby_Bramm-Baktis_3.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">The dress uses two fabrics: a soft and stretchy cotton interlock, sourced from a used craft supply store, and a slightly stiffer knit, discovered in a “free” box outside of an alterations shop. The two fabrics flow around the body to create a candy-colored swirl, which ends at mid-calf with a soft flare.</p>
+                </div>
+            </div>
+        </div>
+        <div id="flex-horizontal">
+            <img src="../images/designers/Ruby.jpg" alt="Ruby" id="designer-headshot">
+            <div id="flex-vertical">
+                <div id="bio">
+                    <h2>Designer Bio</h2>
+                    <p>Ruby has always been drawn to work which combines hands-on, technical labor with artistic expression, and has found a perfect balance between these forces in the art of garment design and construction. Her interest in style began when she moved from her hometown of Toronto, Ontario to Montreal, Quebec, where she spent years working with vintage clothing alongside friends who inspired her to develop a distinct personal aesthetic and taught her about the joy of self-expression. Though she stumbled into Minneapolis College’s Apparel Technologies program almost by accident, she’s extremely grateful to have gotten the opportunity to hone a new set of skills which seem to magically align with her passions and interests. Ruby is excited to see where this degree leads her and hopes to be able to continue living in Minneapolis, the city of her dreams.</p>
+                </div>
+                <div id="statement">
+                    <h2>Designer Statement</h2>
+                    <p>It’s possible that the objects we lose or let go of disappear for a reason; that they’re meant to run away and lead new lives. My collection, “Cedar Chest,” provides one possible next chapter to this kind of story: it uses exclusively thrifted and found fabric, giving new life to old materials. I source my materials from thrift store bins, yard sales, front stoops, and my friend’s parent’s basements, allowing the fabric to dictate the direction in which each design moves. The designs are then developed with an aesthetic inspired by the organic shapes and vibrant colors of the gardens I’ve worked in, and the variety of textures and prints in the vintage clothing I’ve been surrounded by. With this collection, I explore the potential hidden within forgotten or discarded items, hoping to create garments which provide a joyful next chapter for both the fabric and the person who wears it.</p>
+                </div>
+                <div id="contact-info">
+                    <a href="https://www.instagram.com/taste.it.twice" target="_blank" class="instagram">@taste.it.twice</a>
+                    <a href="mailto:rubykatherinebb@gmail.com" target="_blank" class="email">rubykatherinebb@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <h1>PAST SHOWS</h1>
+        <ul>
+            <li onclick="handleClick('https://2023.mcappareltechnologies.com/')">2023</li>
+            <li onclick="handleClick('https://2022.mcappareltechnologies.com/')">2022</li>
+            <li onclick="handleClick('https://2021.mcappareltechnologies.com/')">2021</li>
+            <li onclick="handleClick('https://tempus.mcappareltechnologies.com/')">2020</li>
+            <li onclick="handleClick('https://intothefray.mcappareltechnologies.com/index.html')">2019</li>
+            <li onclick="handleClick('https://thirteen.mcappareltechnologies.com/index.html')">2018</li>
+            <li onclick="handleClick('https://equinox.mcappareltechnologies.com/')">2017</li>
+        </ul>
+        <a href="https://minneapolis.edu/" target="_blank"><img src="../images/logos/mc-logo-black.svg" alt="Minneapolis College Logo" id="school-logo"></a>
+    </footer>
+</body>
+</html>

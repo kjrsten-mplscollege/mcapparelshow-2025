@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BluePrint</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../js/app.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../images/logos/blueprint-logo-text.svg" alt="BluePrint Text Logo" id="logo-text" onclick="handleClick('../index.html')">
+            <img src="../images/icons/mobile-lines.svg" onclick="handleNavToggle()" id="mobile-lines">
+        </div>
+        <div id="navbar">
+            <ul>
+                <li onclick="handleClick('../index.html#designers')">Designers</li>
+                <li onclick="handleClick('../show.html')">Show</li>
+                <li onclick="handleClick('../credits.html')">Credits</li>
+            </ul>
+        </div>
+        <img src="../images/background-image/needle.svg" alt="Needle" id="needle">
+    </header>
+
+    <div id="designer-page">
+        <h1 id="name">Christian Fettig</h1>
+        <h2 id="collection-name">Origins</h2>
+        <div id="collection-gallery">
+            <div class="container">
+                <img src="../images/garments/christian/Christian_1_new.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">Model Seven Wright wears a knee length coatdress made from high quality white boiled wool. The coat features slip pockets and oversized sleeves that create a billowing effect.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../images/garments/christian/Christian_2_new.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">The coat is lined with the same boiled wool fabric and a loose weave houndstooth, which is exposed at the collar. Seven’s pose shows off the excess of fabric that allows the collar to stand up in the back.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../images/garments/christian/Christian_3_new.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">The flared skirt adds volume and elegance to the look, resulting in a fitted yet cozy coatdress for cold Minnesota winters.</p>
+                </div>
+            </div>
+        </div>
+        <div id="flex-horizontal">
+            <img src="../images/designers/Christian.jpg" alt="Christian" id="designer-headshot">
+            <div id="flex-vertical">
+                <div id="bio">
+                    <h2>Designer Bio</h2>
+                    <p>Christian Fettig was born and raised in Bemidji, MN and spent much of his childhood dreaming of a future in design. He began his fashion education at the University of Minnesota and transferred to Minneapolis College where he has further defined his artistic style and purpose. Christian dreams of moving to France and building a brand around the idea of Dasein—being present in life. Eventually he would like to own a farm on which he grows clothing fibers for his designs.</p>
+                </div>
+                <div id="statement">
+                    <h2>Designer Statement</h2>
+                    <p>My collection, “Origins,” is based on imagery from my childhood revolving around life on the lake in a cold climate. For this reason, the primary material is wool accompanied by other natural fibers. The colors are inspired by northern Minnesota's transition from fall to winter. Each look is designed to sit on the body comfortably, evoking the comfort of childhood. These pieces are meant to be worn as casual couture.</p>
+                </div>
+                <div id="contact-info">
+                    <a href="https://www.instagram.com/dasein_house" target="_blank" class="instagram">@dasein_house</a>
+                    <a href="mailto:christian.fettig1@gmail.com" target="_blank" class="email">christian.fettig1@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <h1>PAST SHOWS</h1>
+        <ul>
+            <li onclick="handleClick('https://2023.mcappareltechnologies.com/')">2023</li>
+            <li onclick="handleClick('https://2022.mcappareltechnologies.com/')">2022</li>
+            <li onclick="handleClick('https://2021.mcappareltechnologies.com/')">2021</li>
+            <li onclick="handleClick('https://tempus.mcappareltechnologies.com/')">2020</li>
+            <li onclick="handleClick('https://intothefray.mcappareltechnologies.com/index.html')">2019</li>
+            <li onclick="handleClick('https://thirteen.mcappareltechnologies.com/index.html')">2018</li>
+            <li onclick="handleClick('https://equinox.mcappareltechnologies.com/')">2017</li>
+        </ul>
+        <a href="https://minneapolis.edu/" target="_blank"><img src="../images/logos/mc-logo-black.svg" alt="Minneapolis College Logo" id="school-logo"></a>
+    </footer>
+</body>
+</html>

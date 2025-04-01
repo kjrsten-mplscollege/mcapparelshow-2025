@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BluePrint</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../js/app.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../images/logos/blueprint-logo-text.svg" alt="BluePrint Text Logo" id="logo-text" onclick="handleClick('../index.html')">
+            <img src="../images/icons/mobile-lines.svg" onclick="handleNavToggle()" id="mobile-lines">
+        </div>
+        <div id="navbar">
+            <ul>
+                <li onclick="handleClick('../index.html#designers')">Designers</li>
+                <li onclick="handleClick('../show.html')">Show</li>
+                <li onclick="handleClick('../credits.html')">Credits</li>
+            </ul>
+        </div>
+        <img src="../images/background-image/needle.svg" alt="Needle" id="needle">
+    </header>
+
+    <div id="designer-page">
+        <h1 id="name">Kendall Nikolas</h1>
+        <h2 id="collection-name">Dungeons and Divas</h2>
+        <div id="collection-gallery">
+            <div class="container">
+                <img src="../images/garments/kendall/Kendall_Nikolas_1.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">This two-piece mini skirt and crop top set is inspired by a villain from the tabletop roleplaying game Dungeons and Dragons. Made of sequined fabric and stretch leather, this look embodies the powerful scaled body of the fearsome dragon.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../images/garments/kendall/Kendall_Nikolas_2.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">Model Ondine Cella brings to life a fantasy integral to “Dungeons and Divas,” lighting up the room with brilliant shifting colors from the multi-colored sequins on the skirt.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../images/garments/kendall/Kendall_Nikolas_3.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">This outfit is ready to take flight with wings handcrafted from wire and cellophane and anchored in a hidden pocket.</p>
+                </div>
+            </div>
+        </div>
+        <div id="flex-horizontal">
+            <img src="../images/designers/Kendall.jpg" alt="Kendall" id="designer-headshot">
+            <div id="flex-vertical">
+                <div id="bio">
+                    <h2>Designer Bio</h2>
+                    <p>Kendall was born and raised in Minnesota. Growing up she paid great attention to the costumes in her favorite movies and shows, and took every opportunity to dress up, including wearing high heels to middle school. Working behind the scenes in theater during middle school created a deep love for costumes and fantasy. Her fondness for fairytales prompted a habit of creating new characters through her clothing choices, exploring a range of aesthetics. As she grew as an artist, she realized how much she wanted to learn more about fashion, leading her to apply to the Minneapolis College Apparel Technology program. She is currently in her senior year, creating her first magical runway collection.</p>
+                </div>
+                <div id="statement">
+                    <h2>Designer Statement</h2>
+                    <p>My collection, “Dungeons and Divas,” draws inspiration from the tabletop roleplaying game Dungeons and Dragons, a game involving fantastical adventures. With many different races and classes to choose from, the possibilities for character creation are endless. This game has motivated me to design outfits that combine both drama and fantasy. “Dungeons and Divas” showcases ensembles that transport the wearer to a magical world, enabling them to become the dream character they always wanted to be. Each outfit is unique and fun, crafted using various fabrics and textures. My goal is to create a range of confident and sexy short skirts and diverse tops. I hope “Dungeons and Divas” will inspire people to explore their creativity through fashion.</p>
+                </div>
+                <div id="contact-info">
+                    <a href="https://www.instagram.com/xfalsexreality" target="_blank" class="instagram">@xfalsexreality</a>
+                    <a href="mailto:kendallnikolas115@gmail.com" target="_blank" class="email">kendallnikolas115@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <h1>PAST SHOWS</h1>
+        <ul>
+            <li onclick="handleClick('https://2023.mcappareltechnologies.com/')">2023</li>
+            <li onclick="handleClick('https://2022.mcappareltechnologies.com/')">2022</li>
+            <li onclick="handleClick('https://2021.mcappareltechnologies.com/')">2021</li>
+            <li onclick="handleClick('https://tempus.mcappareltechnologies.com/')">2020</li>
+            <li onclick="handleClick('https://intothefray.mcappareltechnologies.com/index.html')">2019</li>
+            <li onclick="handleClick('https://thirteen.mcappareltechnologies.com/index.html')">2018</li>
+            <li onclick="handleClick('https://equinox.mcappareltechnologies.com/')">2017</li>
+        </ul>
+        <a href="https://minneapolis.edu/" target="_blank"><img src="../images/logos/mc-logo-black.svg" alt="Minneapolis College Logo" id="school-logo"></a>
+    </footer>
+</body>
+</html>

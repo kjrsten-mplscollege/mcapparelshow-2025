@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BluePrint</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../js/app.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../images/logos/blueprint-logo-text.svg" alt="BluePrint Text Logo" id="logo-text" onclick="handleClick('../index.html')">
+            <img src="../images/icons/mobile-lines.svg" onclick="handleNavToggle()" id="mobile-lines">
+        </div>
+        <div id="navbar">
+            <ul>
+                <li onclick="handleClick('../index.html#designers')">Designers</li>
+                <li onclick="handleClick('../show.html')">Show</li>
+                <li onclick="handleClick('../credits.html')">Credits</li>
+            </ul>
+        </div>
+        <img src="../images/background-image/needle.svg" alt="Needle" id="needle">
+    </header>
+
+    <div id="designer-page">
+        <h1 id="name">Karen Grimm</h1>
+        <h2 id="collection-name">ROZA</h2>
+        <div id="collection-gallery">
+            <div class="container">
+                <img src="../images/garments/karen/Karen_Grimm_1.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">Model Sammy Prado showcases a convertible, three-piece bridal look. The floor-length lace duster is worn over a two-piece outfit made of a textured, metallic fabric. It features dramatic angel sleeves, a rose motif, and eyelash edging, creating a traditional wedding-gown feel. The lace used to construct the piece comes from a repurposed tablecloth.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../images/garments/karen/Karen_Grimm_2.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">Here Sammy highlights the intricate details of the ensemble: the delicate edging of the lace on the sleeve, the asymmetrical smocked rose swirl on the bronze top, and the ombré beading across the front. The beads featured are from a salvaged necklace.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../images/garments/karen/Karen_Grimm_3.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">Sammy shows off the versatility of this outfit by removing the duster to create a more casual look. The two-piece outfit features a one-shoulder cropped top and high-waisted wide-legged pants. The fabric for both items comes from a set of upcycled curtains.</p>
+                </div>
+            </div>
+        </div>
+        <div id="flex-horizontal">
+            <img src="../images/designers/Karen.jpg" alt="Karen" id="designer-headshot">
+            <div id="flex-vertical">
+                <div id="bio">
+                    <h2>Designer Bio</h2>
+                    <p>Karen is a lifelong artist, sewist, and general maker who has been poking her fingers with sewing needles since the age of five. Despite pursuing the traditional route of school and career, she found herself continually drawn back to her creative roots, feeling an undeniable pull towards artistic expression. At the age of forty, Karen decided to leave behind the security of a government job to fully immerse herself in creative endeavors both at home and here at Minneapolis College. One class at a time, she has worked her way through the Apparel Technologies program, while also serving in the wedding industrial complex, working in the repair industry, and sewing everything her friends and neighbors can throw at her. With a deep commitment to sustainability, she channels her energies into reusing, repurposing, and reducing waste, transforming discarded materials into works of art with somewhat-practical purposes. Through her art, Karen invites viewers to see the beauty in the overlooked and what it could be, and to join her in the journey towards a more eco-conscious future. Karen is a lifelong Minnesotan and still forgets to use a thimble.</p>
+                </div>
+                <div id="statement">
+                    <h2>Designer Statement</h2>
+                    <p>My revolutionary line of convertible wedding gowns, “ROZA,” redefines bridal elegance while championing sustainability. In an industry often fraught with excess, I strive to reduce waste in the wedding industrial complex by offering brides versatile attire that transcends the traditional confines of “the day.” Crafted from a mix of new and salvaged materials, each look tells a unique story of renewal and reinvention. Inspired by the timeless symbolism of the rose—traditionally a representation of femininity and enduring beauty—my gowns also embody a new ethos of inclusion, embracing brides of all backgrounds and identities. With ROZA, every bride can make a statement that resonates far beyond the wedding aisle, celebrating love, sustainability, and the power of conscious choices.</p>
+                </div>
+                <div id="contact-info">
+                    <a href="https://www.instagram.com/KarensReKreations" target="_blank" class="instagram">@KarensReKreations</a>
+                    <a href="mailto:KarensReKreations@gmail.com" target="_blank" class="email">KarensReKreations@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <h1>PAST SHOWS</h1>
+        <ul>
+            <li onclick="handleClick('https://2023.mcappareltechnologies.com/')">2023</li>
+            <li onclick="handleClick('https://2022.mcappareltechnologies.com/')">2022</li>
+            <li onclick="handleClick('https://2021.mcappareltechnologies.com/')">2021</li>
+            <li onclick="handleClick('https://tempus.mcappareltechnologies.com/')">2020</li>
+            <li onclick="handleClick('https://intothefray.mcappareltechnologies.com/index.html')">2019</li>
+            <li onclick="handleClick('https://thirteen.mcappareltechnologies.com/index.html')">2018</li>
+            <li onclick="handleClick('https://equinox.mcappareltechnologies.com/')">2017</li>
+        </ul>
+        <a href="https://minneapolis.edu/" target="_blank"><img src="../images/logos/mc-logo-black.svg" alt="Minneapolis College Logo" id="school-logo"></a>
+    </footer>
+</body>
+</html>

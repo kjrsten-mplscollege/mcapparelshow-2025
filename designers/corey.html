@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BluePrint</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../js/app.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../images/logos/blueprint-logo-text.svg" alt="BluePrint Text Logo" id="logo-text" onclick="handleClick('../index.html')">
+            <img src="../images/icons/mobile-lines.svg" onclick="handleNavToggle()" id="mobile-lines">
+        </div>
+        <div id="navbar">
+            <ul>
+                <li onclick="handleClick('../index.html#designers')">Designers</li>
+                <li onclick="handleClick('../show.html')">Show</li>
+                <li onclick="handleClick('../credits.html')">Credits</li>
+            </ul>
+        </div>
+        <img src="../images/background-image/needle.svg" alt="Needle" id="needle">
+    </header>
+
+    <div id="designer-page">
+        <h1 id="name">Corey Grayner</h1>
+        <h2 id="collection-name">Never Say Dye </h2>
+        <div id="collection-gallery">
+            <div class="container">
+                <img src="../images/garments/corey/Corey_Grayner1.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">Model Bronwyn Simmons wears a neon green velour spandex mini dress with an asymmetrical neckline and a crocheted spiderweb overlay made from an iridescent t-shirt yarn. The spiderweb cascades out and down from their right shoulder, ending in loose strands that swing around their shins.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../images/garments/corey/Corey_Grayner2.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">A closer look at the back of the dress reveals the inverted strap widths.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../images/garments/corey/Corey_Grayner3.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">Bronwyn balances on the toes of their platform shoes with arms extended, revealing the side seam and overall shape of the dress, which is comfortably fitted throughout and falls to just above mid-thigh.</p>
+                </div>
+            </div>
+        </div>
+        <div id="flex-horizontal">
+            <img src="../images/designers/Corey.jpg" alt="Corey" id="designer-headshot">
+            <div id="flex-vertical">
+                <div id="bio">
+                    <h2>Designer Bio</h2>
+                    <p>Corey is originally from Bergen County, New Jersey and has lived in Minneapolis for the last six years. Growing up as a plus size kid, the clothing options were limited for him. He was assigned female at birth and his trans identity didn’t become clear until his early twenties but there were many signs throughout his life. Up until the age of sixteen, he felt the need to push away all attitudes, clothes, and colors that he considered “feminine” because he didn’t want to be seen that way. He only felt comfortable in oversized “boys” clothes and hand-me-downs from his brother. In elementary and middle school when he was forced to dress up for things like picture day, his options for “nice” clothes were limited to pieces intended for middle-aged women in the plus-size section. In his teens he lost a significant amount of weight which helped him embrace feminine clothes. It took another few years to figure out that, while he loved dresses and feminine fashion, he still didn’t feel right wearing them himself. Today, Corey has taken great strides in his physical transition that have helped his emotional one as well. He is a more fully realized person, especially now that he has found a creative outlet for his love of clothes. </p>
+                </div>
+                <div id="statement">
+                    <h2>Designer Statement</h2>
+                    <p>My collection, “Never Say Dye,” is a rewritten nostalgic retrospective of my adolescence. I am a child of the early 2000s, so Y2K style speaks to me and brings me back to some of my earliest memories. As a kid, I dealt with several limitations when it came to self-expression through clothes: some that I put on myself and some that were put on me by others. I now have a much clearer picture of who I am as a queer Trans man, and I want my first collection to rectify my past struggle with self-expression and combine that with the joy that I feel about who I am now. Comfortable, trendy, and quality plus-size options are particularly important to me, so the main focus of my collection is to cater to body types that are often left out of mainstream fashion—body types like my own. Half of this collection is casual, with bright neon spandex velour and maximalist accessories. The other half are more tailored formal looks. The silver chains and spiderweb motifs are carried throughout the collection as a whimsical and somewhat humorous take on the darkness that followed me for much of my life—a darkness that no longer holds me back. This collection is a love letter to my lonely and confused younger self. </p>
+                </div>
+                <div id="contact-info">
+                    <a href="https://www.instagram.com/c.graynz" target="_blank" class="instagram">@c.graynz</a>
+                    <a href="mailto:cgrayner11@gmail.com" target="_blank" class="email">cgrayner11@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <h1>PAST SHOWS</h1>
+        <ul>
+            <li onclick="handleClick('https://2023.mcappareltechnologies.com/')">2023</li>
+            <li onclick="handleClick('https://2022.mcappareltechnologies.com/')">2022</li>
+            <li onclick="handleClick('https://2021.mcappareltechnologies.com/')">2021</li>
+            <li onclick="handleClick('https://tempus.mcappareltechnologies.com/')">2020</li>
+            <li onclick="handleClick('https://intothefray.mcappareltechnologies.com/index.html')">2019</li>
+            <li onclick="handleClick('https://thirteen.mcappareltechnologies.com/index.html')">2018</li>
+            <li onclick="handleClick('https://equinox.mcappareltechnologies.com/')">2017</li>
+        </ul>
+        <a href="https://minneapolis.edu/" target="_blank"><img src="../images/logos/mc-logo-black.svg" alt="Minneapolis College Logo" id="school-logo"></a>
+    </footer>
+</body>
+</html>

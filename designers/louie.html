@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BluePrint</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../js/app.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../images/logos/blueprint-logo-text.svg" alt="BluePrint Text Logo" id="logo-text" onclick="handleClick('../index.html')">
+            <img src="../images/icons/mobile-lines.svg" onclick="handleNavToggle()" id="mobile-lines">
+        </div>
+        <div id="navbar">
+            <ul>
+                <li onclick="handleClick('../index.html#designers')">Designers</li>
+                <li onclick="handleClick('../show.html')">Show</li>
+                <li onclick="handleClick('../credits.html')">Credits</li>
+            </ul>
+        </div>
+        <img src="../images/background-image/needle.svg" alt="Needle" id="needle">
+    </header>
+
+    <div id="designer-page">
+        <h1 id="name">Louis Lynch</h1>
+        <h2 id="collection-name">Red Threads</h2>
+        <div id="collection-gallery">
+            <div class="container">
+                <img src="../images/garments/louie/Louis 1.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">Model Lorenzo Silva rocks this Coveted ensemble consisting of a hand-painted striped moto jacket made of cotton upholstery fabric lined with silk, a white cotton tailored shirt with asymmetrical gathering, and multi-layered shorts. Completing the look is a cow hide purse.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../images/garments/louie/Louis 2.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">The side of the shirt is brought high with carefully placed gathers to reveal the construction of the tri-jorts, a series of shorts tops sewn together to create a layered effect. Foremost in the design are the denim shorts, or jorts. Sitting underneath are green shorts that are a match to the striped moto jacket. Closest to the body are compression shorts that hold up the collective garment.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../images/garments/louie/Louis 3.jpg" alt="">
+                <div class="overlay">
+                    <p class="description">The hair on hide purse is inspired by my mom, in a deliberate attempt to make her perfect purse. Each material used in its construction was carefully chosen for its quality and sentimental value. The body of the purse is made from a hair-on-hide rug that belonged to her late husband and the nylon boat rope symbolizes her late mother.</p>
+                </div>
+            </div>
+        </div>
+        <div id="flex-horizontal">
+            <img src="../images/designers/Louie.jpg" alt="Louie" id="designer-headshot">
+            <div id="flex-vertical">
+                <div id="bio">
+                    <h2>Designer Bio</h2>
+                    <p>Growing up in the Twin Cities, Louie was surrounded by many walks of life that shaped him into the person he is today. Strong creative influences from his upbringing and adolescence have shaped his wear into a reflection of himself today. He blends the polished look that he was forced to wear while attending catholic schools and utilizes the rebellious edge that came with being confined. Moving on to Minneapolis College, Louie found a new form of freedom. He was not only able to dress how he chose but was celebrated for breaking out of his shell. Learning how to create garments from scratch, Louie was able to express himself like never before. Finding a balance between the uniforms he felt comfortable in and the nonconformity he aimed to achieve, Louie has slowly found cohesion. He has worked hard to learn about the interpersonal side of creating art. He is an artist who creates first and thinks about it later, which is a fault of storytelling. Through his brand Covet, Louie is aiming to make more intent driven works of art to explain his story further.</p>
+                </div>
+                <div id="statement">
+                    <h2>Designer Statement</h2>
+                    <p>My collection, “Red Threads,” is a Covet Collection and is based on my time spent at Minneapolis College. Over the years, I have made brilliant creations, but they have not been without mistakes. To learn from these mistakes, I opted to use red threads when sewing. This bright color has influenced the development of the habits and techniques I use to construct garments. My work uses natural materials to produce versatile garments for both work and play that will age with the owner, as maintained clothing will stand the test of time when built to last. I chose an Americana theme for my collection, with the intention to subvert its traditional interpretations by incorporating a distressed chic style. The looks incorporate blue jeans and white tees, which create a sense of cohesion along with the use of similar proportions and silhouettes. </p>
+                </div>
+                <div id="contact-info">
+                    <a href="https://www.instagram.com/Covet09" target="_blank" class="instagram">@Covet09</a>
+                    <a href="mailto:louis.g.lynch@gmail.com" target="_blank" class="email">louis.g.lynch@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <h1>PAST SHOWS</h1>
+        <ul>
+            <li onclick="handleClick('https://2023.mcappareltechnologies.com/')">2023</li>
+            <li onclick="handleClick('https://2022.mcappareltechnologies.com/')">2022</li>
+            <li onclick="handleClick('https://2021.mcappareltechnologies.com/')">2021</li>
+            <li onclick="handleClick('https://tempus.mcappareltechnologies.com/')">2020</li>
+            <li onclick="handleClick('https://intothefray.mcappareltechnologies.com/index.html')">2019</li>
+            <li onclick="handleClick('https://thirteen.mcappareltechnologies.com/index.html')">2018</li>
+            <li onclick="handleClick('https://equinox.mcappareltechnologies.com/')">2017</li>
+        </ul>
+        <a href="https://minneapolis.edu/" target="_blank"><img src="../images/logos/mc-logo-black.svg" alt="Minneapolis College Logo" id="school-logo"></a>
+    </footer>
+</body>
+</html>
