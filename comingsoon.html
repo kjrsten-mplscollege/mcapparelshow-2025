@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Chapters</title>
+    <link rel="icon" href="./images/logos/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        body::before {
+            content: "";
+            z-index: 2;
+            border: none;
+            position: relative;
+            height: 0;
+            width: 0;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 1400px;
+        }
+        .big {
+            font-size: 2rem;
+        }
+        .coming-soon {
+            text-align: center;
+        }
+        .coming-soon img {
+            width: 100%;
+            max-width: 1400px;
+        }
+        footer {
+        box-shadow: none;
+        background-color: black;
+        }
+        footer li a:link,
+        footer li a:visited,
+        footer li a:hover,
+        footer li a:active {
+            color: white
+        }
+        footer>a {
+            background-color: white;
+            margin-top: 2rem;
+            padding: 0 1.5rem 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container coming-soon">
+            <h1>Coming Soon</h1>
+            <h2>Full website with student collections</h2>
+            <h3>Check back on Thursday May 8!</h3>
+            <br><br>
+            <p>Make plans to attend the live show:</p>
+            <br>
+            <p class="showinfo"> <span class="big">7 p.m. Wednesday May 16</span><br><br>
+                Main Floor, Technical Building ("T Building")<br>
+                1501 Hennepin Ave.<br>
+                Downtown Minneapolis<br>
+            </p>
+            <br>
+        </div>
+        <img src="images/comingsoon.jpg" alt="Coming Soon">
+    </main>
+    <footer>
+        <h1>PAST SHOWS</h1>
+        <ul>
+            <li><a href='https://2024.mcappareltechnologies.com/'>2024</a></li>
+            <li><a href='https://2023.mcappareltechnologies.com/'>2023</a></li>
+            <li><a href='https://2022.mcappareltechnologies.com/'>2022</a></li>
+            <li><a href='https://2021.mcappareltechnologies.com/'>2021</a></li>
+            <li><a href='https://2020.mcappareltechnologies.com/'>2020</a></li>
+            <li><a href='https://2019.mcappareltechnologies.com/'>2019</a></li>
+        </ul>
+        <a href="https://minneapolis.edu/" target="_blank"><img src="./images/logos/mc-logo-black.svg" alt="Minneapolis College Logo" id="school-logo"></a>
+    </footer>
+</body>
+</html>
