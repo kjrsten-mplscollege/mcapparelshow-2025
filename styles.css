@@ -2,11 +2,43 @@
   font-family: "Univers-Regular";
   src: url(./fonts/univers/UniversRegular.ttf);
 }
+
+@font-face {
+  font-family: "Trajan-Bold";
+  src: url(./fonts/FontsFree-Net-TrajanPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Kufam-Regular";
+  src: url(./fonts/Kufam-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Kufam-Italic";
+  src: url(./fonts/Kufam-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Kufam-Bold";
+  src: url(./fonts/Kufam-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Kufam-Bold-Italic";
+  src: url(./fonts/Kufam-SemiBoldItalic.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Univers-Regular", sans-serif;
+  font-family: "Kufam-Regular", sans-serif;
+  line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Trajan-Bold";
+  font-weight: normal;
 }
 
 img {
@@ -127,7 +159,7 @@ header.show #needle {
 
 #designers {
   margin: 60px 0 30px;
-  font-family: "Salted", cursive;
+  font-family: "Trajan-Bold", sans-serif;
   color: #99AEDA;
 }
 
@@ -224,9 +256,11 @@ footer #school-logo {
   font-size: 48px;
 }
 #designer-page #collection-name {
-  font-family: "Salted", cursive;
   color: #99AEDA;
+  font-family: "Kufam-Regular", sans-serif;
+  font-size: 2.2rem;
 }
+
 #designer-page #collection-gallery {
   margin-top: 15px;
   justify-content: center;
@@ -348,7 +382,7 @@ footer #school-logo {
 
 #show-title {
   color: #99AEDA;
-  font-family: "Salted", cursive;
+  font-family: "Trajan-Bold", sans-serif;
   padding-top: 50px;
 }
 
@@ -375,7 +409,7 @@ footer #school-logo {
 
 #credits-title {
   color: #99AEDA;
-  font-family: "Salted", cursive;
+  font-family: "Trajan-Bold", sans-serif;
   padding-top: 50px;
 }
 
