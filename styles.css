@@ -147,7 +147,7 @@ header.show #needle {
   align-items: center;
   width: 284px;
 }
-#gallery .designer ::before {
+/* #gallery .designer ::before {
   content: "";
   position: absolute;
   left: -25px;
@@ -158,11 +158,11 @@ header.show #needle {
   background-color: #99AEDA;
   border-radius: 40px;
   opacity: 0.15;
-}
+} */
 #gallery .designer img {
   cursor: pointer;
   width: 100%;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   filter: grayscale(1);
   transition: filter 0.25s;
 }
@@ -256,7 +256,7 @@ footer #school-logo {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   transition: opacity 0.25s;
 }
 #designer-page #collection-gallery .container .overlay:hover {
@@ -266,16 +266,25 @@ footer #school-logo {
 #designer-page #collection-gallery img {
   width: 100%;
   height: auto;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
+
+#headshot-container {
+  flex-direction: column;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
 #designer-page #flex-horizontal {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: top;
   padding: 80px 40px;
 }
-#designer-page #flex-horizontal::before {
+/* #designer-page #flex-horizontal::before {
   content: "";
   border-radius: 40px;
   opacity: 0.15;
@@ -286,20 +295,24 @@ footer #school-logo {
   height: 494px;
   width: 250px;
   background-color: #99AEDA;
-}
-#designer-page #flex-horizontal #designer-headshot {
+} */
+#designer-page #flex-horizontal #designer-headshot,
+#designerlogo {
   width: 250px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 #designer-page #flex-horizontal #flex-vertical {
-  padding-top: 20px;
+  padding-top: 0;
   max-width: 650px;
   text-align: left;
   display: flex;
   flex-direction: column;
 }
 #designer-page #flex-horizontal #flex-vertical #bio, #designer-page #flex-horizontal #flex-vertical #statement {
-  padding: 10px 0;
+  /* padding: 10px 0; */
+}
+#statement {
+  margin-top: 2rem;
 }
 #designer-page #flex-horizontal #flex-vertical #bio h2, #designer-page #flex-horizontal #flex-vertical #statement h2 {
   font-size: 30px;
@@ -328,7 +341,7 @@ footer #school-logo {
 #designer-page #flex-horizontal #flex-vertical a.email::before, #designer-page #flex-horizontal #flex-vertical a.instagram::before {
   font-size: 0px;
   display: inline-block;
-  border-radius: 10%;
+  /* border-radius: 10%; */
   width: 30px;
   margin-right: 10px;
 }
@@ -468,18 +481,19 @@ footer #school-logo {
   #designer-page #flex-horizontal {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     padding: 40px;
   }
   #designer-page #flex-horizontal:before {
     left: 15px;
     top: auto;
   }
-  #designer-page #flex-horizontal #designer-headshot {
+  #designer-page #flex-horizontal #designer-headshot,
+  #designerlogo {
     width: 250px;
   }
   #designer-page #flex-horizontal #flex-vertical {
-    padding: 40px;
+    padding: 0 40px 40px 40px;
     max-width: 642px;
     text-align: left;
     display: flex;
