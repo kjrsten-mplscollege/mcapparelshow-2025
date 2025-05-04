@@ -36,7 +36,12 @@
   line-height: 1.5em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Trajan-Bold";
   font-weight: normal;
 }
@@ -58,22 +63,126 @@ body {
   transition: padding-top 0.25s;
   min-height: 100vh;
   padding-top: 91px;
-  background-color: #2E3561;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-image: url(./images/background-image/grid-background.svg);
-  background-size: 100px;
+  position: relative;
 }
+
+/* NEON STYLINGS */
+.neon-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./images/background-image/neon-background-large.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Neon text styling */
+.neonTextTitle {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #ffc108,
+    0 0 82px #ffc108, 0 0 92px #ffc108, 0 0 102px #ffc108, 0 0 151px #ffc108;
+  font-family: "Kufam-Regular", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 4.2rem;
+  animation: pulsate 1.5s infinite alternate;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  margin: 6rem 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #ffc108,
+    0 0 0.8rem #ffc108, 0 0 2.8rem #ffc108, inset 0 0 1.3rem #ffc108;
+}
+
+/* Neon hover effect for divs */
+.neonHover {
+  transition: all 0.3s ease;
+  border: 0.2rem solid transparent;
+  border-radius: 2rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.neonHover:hover {
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #ffc108,
+    0 0 0.8rem #ffc108, 0 0 2.8rem #ffc108, inset 0 0 1.3rem #ffc108;
+  animation: pulsate2 0.9s infinite alternate;
+}
+/* Pulsating animation for both text and hover effects */
+@keyframes pulsate {
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #ffc108,
+      0 0 80px #ffc108, 0 0 90px #ffc108, 0 0 100px #ffc108, 0 0 150px #ffc108;
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #ffc108,
+      0 0 0.8rem #ffc108, 0 0 2.8rem #ffc108, inset 0 0 1.3rem #ffc108;
+  }
+
+  0% {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #ffc108,
+      0 0 45px #ffc108, 0 0 55px #ffc108, 0 0 70px #ffc108, 0 0 80px #ffc108;
+    box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 1rem #ffc108,
+      0 0 0.4rem #ffc108, 0 0 1.4rem #ffc108, inset 0 0 0.65rem #ffc108;
+  }
+}
+@keyframes pulsate2 {
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #ff52ff,
+      0 0 80px #ff52ff, 0 0 90px #ff52ff, 0 0 100px #ff52ff, 0 0 150px #ff52ff;
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #ffc108,
+      0 0 0.8rem #ff52ff, 0 0 2.8rem #ff52ff, inset 0 0 1.3rem #ff52ff;
+  }
+
+  0% {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #ffc108,
+      0 0 45px #ff52ff, 0 0 55px #ff52ff, 0 0 70px #ff52ff, 0 0 80px #ff52ff;
+    box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 1rem #ffc108,
+      0 0 0.4rem #ff52ff, 0 0 1.4rem #ff52ff, inset 0 0 0.65rem #ff52ff;
+  }
+}
+/* Neon Media Queries */
+/* For large screens (tablets) */
+@media (min-width: 1300px) {
+  body {
+    background-image: url(./images/background-image/neon-background-large.jpg);
+  }
+}
+
+/* For medium screens (tablets) */
+@media only screen and (max-width: 1200px) {
+  .neon-background {
+    background-image: url("./images/background-image/neon-background-medium.jpg");
+  }
+}
+
+/* For small screens (mobile) */
+@media only screen and (max-width: 768px) {
+  .neon-background {
+    background-image: url("./images/background-image/neon-background-small.jpg");
+    background-position: 70% center;
+  }
+  .neonTextTitle {
+    font-size: 3.15rem;
+  }
+}
+
 body.show {
   padding-top: 200px;
 }
 body::before {
   content: "";
   z-index: 2;
-  border-top: dashed 2px #E4EAF6;
-  border-right: dashed 2px #E4EAF6;
+  border-top: dashed 2px #e4eaf6;
+  border-right: dashed 2px #e4eaf6;
   position: fixed;
   height: 100px;
   width: 97vw;
@@ -86,7 +195,7 @@ header {
   top: 0;
   width: 100vw;
   height: 91px;
-  background-color: #99AEDA;
+  background-color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -111,18 +220,18 @@ header #navbar ul {
   list-style-type: none;
 }
 header #navbar ul li {
-  transition: color 0.25s;
+  transition: all 0.25s;
   margin: 5px 0;
-  color: #E4EAF6;
+  color: white;
   cursor: pointer;
   font-size: 24px;
 }
 header #navbar ul li:hover {
-  color: white;
+  transform: translateY(-5px);
 }
 header #logo {
   width: 100%;
-  padding: 31px 15px 0px;
+  padding: 31px 25px 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -142,7 +251,7 @@ header #needle {
   left: calc(97vw - 2px);
 }
 header.show {
-  height: 200px;
+  height: 15rem;
 }
 header.show #navbar {
   height: 100%;
@@ -160,7 +269,7 @@ header.show #needle {
 #designers {
   margin: 60px 0 30px;
   font-family: "Trajan-Bold", sans-serif;
-  color: #99AEDA;
+  color: #ffddff;
 }
 
 #gallery {
@@ -197,6 +306,7 @@ header.show #needle {
   /* border-radius: 30px; */
   filter: grayscale(1);
   transition: filter 0.25s;
+  border-radius: 2rem;
 }
 #gallery .designer img:hover {
   filter: grayscale(0);
@@ -204,11 +314,8 @@ header.show #needle {
 #gallery .designer h2 {
   cursor: pointer;
   margin-top: 30px;
-  color: #E4EAF6;
+  color: #e4eaf6;
   transition: color 0.25s;
-}
-#gallery .designer h2:hover {
-  color: #99AEDA;
 }
 
 footer {
@@ -216,7 +323,7 @@ footer {
   padding-top: 15px;
   height: 218px;
   width: 100vw;
-  background-color: #E4EAF6;
+  background-color: #ffddff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -231,10 +338,10 @@ footer ul {
 footer ul li {
   margin: 0px 10px;
   cursor: pointer;
-  transition: color 0.25s;
+  transition: all 0.25s;
 }
 footer ul li:hover {
-  color: #99AEDA;
+   transform: translateY(-5px);
 }
 footer #school-logo {
   width: 100px;
@@ -248,7 +355,7 @@ footer #school-logo {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  color: #E4EAF6;
+  color: #e4eaf6;
   text-align: center;
 }
 #designer-page #name {
@@ -256,7 +363,7 @@ footer #school-logo {
   font-size: 48px;
 }
 #designer-page #collection-name {
-  color: #99AEDA;
+  color: #99aeda;
   font-family: "Kufam-Regular", sans-serif;
   font-size: 2.2rem;
 }
@@ -342,13 +449,15 @@ footer #school-logo {
   display: flex;
   flex-direction: column;
 }
-#designer-page #flex-horizontal #flex-vertical #bio, #designer-page #flex-horizontal #flex-vertical #statement {
+#designer-page #flex-horizontal #flex-vertical #bio,
+#designer-page #flex-horizontal #flex-vertical #statement {
   /* padding: 10px 0; */
 }
 #statement {
   margin-top: 2rem;
 }
-#designer-page #flex-horizontal #flex-vertical #bio h2, #designer-page #flex-horizontal #flex-vertical #statement h2 {
+#designer-page #flex-horizontal #flex-vertical #bio h2,
+#designer-page #flex-horizontal #flex-vertical #statement h2 {
   font-size: 30px;
   margin-bottom: 4px;
 }
@@ -360,11 +469,11 @@ footer #school-logo {
   margin: 10px 0;
   align-items: center;
   font-size: 20px;
-  color: #99AEDA;
+  color: #99aeda;
   transition: color 0.25s;
 }
 #designer-page #flex-horizontal #flex-vertical a:hover {
-  color: #E4EAF6;
+  color: #e4eaf6;
 }
 #designer-page #flex-horizontal #flex-vertical a.instagram::before {
   content: url(./images/icons/instagram.svg);
@@ -372,7 +481,8 @@ footer #school-logo {
 #designer-page #flex-horizontal #flex-vertical a.email::before {
   content: url(./images/icons/email.svg);
 }
-#designer-page #flex-horizontal #flex-vertical a.email::before, #designer-page #flex-horizontal #flex-vertical a.instagram::before {
+#designer-page #flex-horizontal #flex-vertical a.email::before,
+#designer-page #flex-horizontal #flex-vertical a.instagram::before {
   font-size: 0px;
   display: inline-block;
   /* border-radius: 10%; */
@@ -381,7 +491,7 @@ footer #school-logo {
 }
 
 #show-title {
-  color: #99AEDA;
+  color: #99aeda;
   font-family: "Trajan-Bold", sans-serif;
   padding-top: 50px;
 }
@@ -400,15 +510,15 @@ footer #school-logo {
 }
 #show a {
   text-decoration: none;
-  color: #E4EAF6;
+  color: #e4eaf6;
   transition: color 0.25s;
 }
 #show a:hover {
-  color: #99AEDA;
+  color: #99aeda;
 }
 
 #credits-title {
-  color: #99AEDA;
+  color: #99aeda;
   font-family: "Trajan-Bold", sans-serif;
   padding-top: 50px;
 }
@@ -426,7 +536,7 @@ footer #school-logo {
 }
 #credits ul {
   list-style-type: none;
-  color: #E4EAF6;
+  color: #e4eaf6;
   margin-bottom: 30px;
 }
 #credits ul li {
@@ -435,7 +545,7 @@ footer #school-logo {
 }
 #credits h2 {
   font-size: 30px;
-  color: #99AEDA;
+  color: #99aeda;
 }
 #credits .column {
   display: flex;
@@ -445,7 +555,7 @@ footer #school-logo {
 }
 
 #credits-footer {
-  color: #E4EAF6;
+  color: #e4eaf6;
   font-size: 16px;
   padding: 20px 0px;
 }
@@ -493,7 +603,7 @@ footer #school-logo {
   }
   header #navbar li {
     transition: color 0.25s;
-    color: #E4EAF6;
+    color: #e4eaf6;
     cursor: pointer;
     font-size: 24px;
   }
@@ -543,5 +653,3 @@ footer #school-logo {
     margin: 0px 15px;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
