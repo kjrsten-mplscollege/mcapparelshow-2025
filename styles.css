@@ -102,6 +102,18 @@ body {
   box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #ffc108,
     0 0 0.8rem #ffc108, 0 0 2.8rem #ffc108, inset 0 0 1.3rem #ffc108;
 }
+.neonText {
+  color: #fff;
+  font-family: "Kufam-Regular", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 0.4em;
+}
+.neonText:hover {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #ff52ff,
+    0 0 500px #ff52ff, 0 0 2px #ff52ff, 0 0 2px #ff52ff, 0 0 2px #ff52ff;
+}
 
 /* Neon hover effect for divs */
 .neonHover {
@@ -341,7 +353,7 @@ footer ul li {
   transition: all 0.25s;
 }
 footer ul li:hover {
-   transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 footer #school-logo {
   width: 100px;
