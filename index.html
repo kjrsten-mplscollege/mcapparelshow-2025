@@ -1,114 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BluePrint</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./images/logos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./images/logos/favicon.ico" type="image/x-icon" />
     <script src="./js/app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="neon-background"></div>
     <header>
-        <div id="logo">
-            <img src="./images/logos/blueprint-logo-text.svg" alt="BluePrint Text Logo" id="logo-text" onclick="handleClick('')">
-            <img src="./images/icons/mobile-lines.svg" onclick="handleNavToggle()" id="mobile-lines">
-        </div>
-        <div id="navbar">
-            <ul>
-                <li onclick="handleClick('#designers')">Designers</li>
-                <li onclick="handleClick('./show.html')">Show</li>
-                <li onclick="handleClick('./credits.html')">Credits</li>
-            </ul>
-        </div>
-        <img src="./images/background-image/needle.svg" alt="Needle" id="needle">
+      <div id="logo">
+        <img
+          src="./images/logos/new-chapters-transparen.png"
+          alt="BluePrint Text Logo"
+          id="logo-text"
+          onclick="handleClick('')"
+        />
+        <img
+          src="./images/icons/mobile-lines.svg"
+          onclick="handleNavToggle()"
+          id="mobile-lines"
+        />
+      </div>
+      <div id="navbar">
+        <ul>
+          <li onclick="handleClick('#designers')">Designers</li>
+          <li onclick="handleClick('./show.html')">Show</li>
+          <li onclick="handleClick('./credits.html')">Credits</li>
+        </ul>
+      </div>
+      <img
+        src="./images/background-image/needle.svg"
+        alt="Needle"
+        id="needle"
+      />
     </header>
-    <img src="./images/logos/blueprint-logo.svg" alt="BluePrint Main Logo" id="main-logo">
-
-
+    <img
+      src="./images/logos/blueprint-logo.svg"
+      alt="BluePrint Main Logo"
+      id="main-logo"
+    />
 
     <h1 id="designers">Our Designers</h1>
     <div id="gallery">
-        <div class="designer">
-            <img src="./images/designers/Audrey.jpg" alt="Audrey" onclick="handleClick('./designers/audrey.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template.html')">Audrey</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Ava.jpg" alt="Ava" onclick="handleClick('./designers/ava.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template2.html')">Ava</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Becky.jpg" alt="Becky" onclick="handleClick('./designers/becky.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template3.html')">Becky</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Brian.jpg" alt="Brian" onclick="handleClick('./designers/brian.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template4.html')">Brian</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Callyn.jpg" alt="Callyn" onclick="handleClick('./designers/callyn.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template5.html')">Callyn</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Christian.jpg" alt="Christian" onclick="handleClick('./designers/christian.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template6.html')">Christian</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Corey.jpg" alt="Corey" onclick="handleClick('./designers/corey.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template7.html')">Corey</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Jack.jpg" alt="Jack" onclick="handleClick('./designers/jack.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template8.html')">Jack</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Jamilla.jpg" alt="Jamilla" onclick="handleClick('./designers/jamilla.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template9.html')">Jamilla</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Karen.jpg" alt="Karen" onclick="handleClick('./designers/karen.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template10.html')">Karen</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Kat.jpg" alt="Kaitlin" onclick="handleClick('./designers/kaitlin.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template11.html')">Kaitlin</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Kendall.jpg" alt="Kendall" onclick="handleClick('./designers/kendall.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template12.html')">Kendall</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Liza.jpg" alt="Lizeth" onclick="handleClick('./designers/lizeth.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template13.html')">Lizeth</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Louie.jpg" alt="Louie" onclick="handleClick('./designers/louie.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template14.html')">Louie</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Melanie.jpg" alt="Melanie" onclick="handleClick('./designers/melanie.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template16.html')">Melanie</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Ruby.jpg" alt="Ruby" onclick="handleClick('./designers/ruby.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template17.html')">Ruby</h2>
-        </div>
-        <div class="designer">
-            <img src="./images/designers/Veronica.jpg" alt="Veronica" onclick="handleClick('./designers/veronica.html')">
-            <h2 onclick="handleClick('./designers/designer-page-template18.html')">Veronica</h2>
-        </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Audrey.jpg"
+          alt="Audrey"
+          onclick="handleClick('./designers/audrey.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template.html')">
+          Audrey
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Ava.jpg"
+          alt="Ava"
+          onclick="handleClick('./designers/ava.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template2.html')">
+          Ava
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Becky.jpg"
+          alt="Becky"
+          onclick="handleClick('./designers/becky.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template3.html')">
+          Becky
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Brian.jpg"
+          alt="Brian"
+          onclick="handleClick('./designers/brian.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template4.html')">
+          Brian
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Callyn.jpg"
+          alt="Callyn"
+          onclick="handleClick('./designers/callyn.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template5.html')">
+          Callyn
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Christian.jpg"
+          alt="Christian"
+          onclick="handleClick('./designers/christian.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template6.html')">
+          Christian
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Corey.jpg"
+          alt="Corey"
+          onclick="handleClick('./designers/corey.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template7.html')">
+          Corey
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Jack.jpg"
+          alt="Jack"
+          onclick="handleClick('./designers/jack.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template8.html')">
+          Jack
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Jamilla.jpg"
+          alt="Jamilla"
+          onclick="handleClick('./designers/jamilla.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template9.html')">
+          Jamilla
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Karen.jpg"
+          alt="Karen"
+          onclick="handleClick('./designers/karen.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template10.html')">
+          Karen
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Kat.jpg"
+          alt="Kaitlin"
+          onclick="handleClick('./designers/kaitlin.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template11.html')">
+          Kaitlin
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Kendall.jpg"
+          alt="Kendall"
+          onclick="handleClick('./designers/kendall.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template12.html')">
+          Kendall
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Liza.jpg"
+          alt="Lizeth"
+          onclick="handleClick('./designers/lizeth.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template13.html')">
+          Lizeth
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Louie.jpg"
+          alt="Louie"
+          onclick="handleClick('./designers/louie.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template14.html')">
+          Louie
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Melanie.jpg"
+          alt="Melanie"
+          onclick="handleClick('./designers/melanie.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template16.html')">
+          Melanie
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Ruby.jpg"
+          alt="Ruby"
+          onclick="handleClick('./designers/ruby.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template17.html')">
+          Ruby
+        </h2>
+      </div>
+      <div class="designer">
+        <img
+          src="./images/designers/Veronica.jpg"
+          alt="Veronica"
+          onclick="handleClick('./designers/veronica.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template18.html')">
+          Veronica
+        </h2>
+      </div>
     </div>
     <footer>
-        <h1>PAST SHOWS</h1>
-        <ul>
-            <li onclick="handleClick('https://2024.mcappareltechnologies.com/')">2024</li>
-            <li onclick="handleClick('https://2023.mcappareltechnologies.com/')">2023</li>
-            <li onclick="handleClick('https://2022.mcappareltechnologies.com/')">2022</li>
-            <li onclick="handleClick('https://2021.mcappareltechnologies.com/')">2021</li>
-            <li onclick="handleClick('https://tempus.mcappareltechnologies.com/')">2020</li>
-            <li onclick="handleClick('https://intothefray.mcappareltechnologies.com/index.html')">2019</li>
-        </ul>
-        <a href="https://minneapolis.edu/" target="_blank"><img src="./images/logos/mc-logo-black.svg" alt="Minneapolis College Logo" id="school-logo"></a>
+      <h1>PAST SHOWS</h1>
+      <ul>
+        <li onclick="handleClick('https://2024.mcappareltechnologies.com/')">
+          2024
+        </li>
+        <li onclick="handleClick('https://2023.mcappareltechnologies.com/')">
+          2023
+        </li>
+        <li onclick="handleClick('https://2022.mcappareltechnologies.com/')">
+          2022
+        </li>
+        <li onclick="handleClick('https://2021.mcappareltechnologies.com/')">
+          2021
+        </li>
+        <li onclick="handleClick('https://tempus.mcappareltechnologies.com/')">
+          2020
+        </li>
+        <li
+          onclick="handleClick('https://intothefray.mcappareltechnologies.com/index.html')"
+        >
+          2019
+        </li>
+      </ul>
+      <a href="https://minneapolis.edu/" target="_blank"
+        ><img
+          src="./images/logos/mc-logo-black.svg"
+          alt="Minneapolis College Logo"
+          id="school-logo"
+      /></a>
     </footer>
-</body>
+  </body>
 </html>

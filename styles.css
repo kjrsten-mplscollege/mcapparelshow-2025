@@ -36,7 +36,12 @@
   line-height: 1.5em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Trajan-Bold";
   font-weight: normal;
 }
@@ -58,22 +63,49 @@ body {
   transition: padding-top 0.25s;
   min-height: 100vh;
   padding-top: 91px;
-  background-color: #2E3561;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-image: url(./images/background-image/grid-background.svg);
-  background-size: 100px;
+  position: relative;
 }
+
+.neon-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./images/background-image/neon-background-large.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* For medium screens (tablets) */
+@media only screen and (max-width: 1200px) {
+  .neon-background {
+    background-image: url("./images/background-image/neon-background-medium.jpg");
+  }
+}
+
+/* For small screens (mobile) */
+@media only screen and (max-width: 768px) {
+  .neon-background {
+    background-image: url("./images/background-image/neon-background-small.jpg");
+    background-position: 70% center;
+  }
+}
+
 body.show {
   padding-top: 200px;
 }
 body::before {
   content: "";
   z-index: 2;
-  border-top: dashed 2px #E4EAF6;
-  border-right: dashed 2px #E4EAF6;
+  border-top: dashed 2px #e4eaf6;
+  border-right: dashed 2px #e4eaf6;
   position: fixed;
   height: 100px;
   width: 97vw;
@@ -86,7 +118,7 @@ header {
   top: 0;
   width: 100vw;
   height: 91px;
-  background-color: #99AEDA;
+  background-color: #99aeda;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -113,7 +145,7 @@ header #navbar ul {
 header #navbar ul li {
   transition: color 0.25s;
   margin: 5px 0;
-  color: #E4EAF6;
+  color: #e4eaf6;
   cursor: pointer;
   font-size: 24px;
 }
@@ -160,7 +192,7 @@ header.show #needle {
 #designers {
   margin: 60px 0 30px;
   font-family: "Trajan-Bold", sans-serif;
-  color: #99AEDA;
+  color: #99aeda;
 }
 
 #gallery {
@@ -204,11 +236,11 @@ header.show #needle {
 #gallery .designer h2 {
   cursor: pointer;
   margin-top: 30px;
-  color: #E4EAF6;
+  color: #e4eaf6;
   transition: color 0.25s;
 }
 #gallery .designer h2:hover {
-  color: #99AEDA;
+  color: #99aeda;
 }
 
 footer {
@@ -216,7 +248,7 @@ footer {
   padding-top: 15px;
   height: 218px;
   width: 100vw;
-  background-color: #E4EAF6;
+  background-color: #e4eaf6;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -234,7 +266,7 @@ footer ul li {
   transition: color 0.25s;
 }
 footer ul li:hover {
-  color: #99AEDA;
+  color: #99aeda;
 }
 footer #school-logo {
   width: 100px;
@@ -248,7 +280,7 @@ footer #school-logo {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  color: #E4EAF6;
+  color: #e4eaf6;
   text-align: center;
 }
 #designer-page #name {
@@ -256,7 +288,7 @@ footer #school-logo {
   font-size: 48px;
 }
 #designer-page #collection-name {
-  color: #99AEDA;
+  color: #99aeda;
   font-family: "Kufam-Regular", sans-serif;
   font-size: 2.2rem;
 }
@@ -342,13 +374,15 @@ footer #school-logo {
   display: flex;
   flex-direction: column;
 }
-#designer-page #flex-horizontal #flex-vertical #bio, #designer-page #flex-horizontal #flex-vertical #statement {
+#designer-page #flex-horizontal #flex-vertical #bio,
+#designer-page #flex-horizontal #flex-vertical #statement {
   /* padding: 10px 0; */
 }
 #statement {
   margin-top: 2rem;
 }
-#designer-page #flex-horizontal #flex-vertical #bio h2, #designer-page #flex-horizontal #flex-vertical #statement h2 {
+#designer-page #flex-horizontal #flex-vertical #bio h2,
+#designer-page #flex-horizontal #flex-vertical #statement h2 {
   font-size: 30px;
   margin-bottom: 4px;
 }
@@ -360,11 +394,11 @@ footer #school-logo {
   margin: 10px 0;
   align-items: center;
   font-size: 20px;
-  color: #99AEDA;
+  color: #99aeda;
   transition: color 0.25s;
 }
 #designer-page #flex-horizontal #flex-vertical a:hover {
-  color: #E4EAF6;
+  color: #e4eaf6;
 }
 #designer-page #flex-horizontal #flex-vertical a.instagram::before {
   content: url(./images/icons/instagram.svg);
@@ -372,7 +406,8 @@ footer #school-logo {
 #designer-page #flex-horizontal #flex-vertical a.email::before {
   content: url(./images/icons/email.svg);
 }
-#designer-page #flex-horizontal #flex-vertical a.email::before, #designer-page #flex-horizontal #flex-vertical a.instagram::before {
+#designer-page #flex-horizontal #flex-vertical a.email::before,
+#designer-page #flex-horizontal #flex-vertical a.instagram::before {
   font-size: 0px;
   display: inline-block;
   /* border-radius: 10%; */
@@ -381,7 +416,7 @@ footer #school-logo {
 }
 
 #show-title {
-  color: #99AEDA;
+  color: #99aeda;
   font-family: "Trajan-Bold", sans-serif;
   padding-top: 50px;
 }
@@ -400,15 +435,15 @@ footer #school-logo {
 }
 #show a {
   text-decoration: none;
-  color: #E4EAF6;
+  color: #e4eaf6;
   transition: color 0.25s;
 }
 #show a:hover {
-  color: #99AEDA;
+  color: #99aeda;
 }
 
 #credits-title {
-  color: #99AEDA;
+  color: #99aeda;
   font-family: "Trajan-Bold", sans-serif;
   padding-top: 50px;
 }
@@ -426,7 +461,7 @@ footer #school-logo {
 }
 #credits ul {
   list-style-type: none;
-  color: #E4EAF6;
+  color: #e4eaf6;
   margin-bottom: 30px;
 }
 #credits ul li {
@@ -435,7 +470,7 @@ footer #school-logo {
 }
 #credits h2 {
   font-size: 30px;
-  color: #99AEDA;
+  color: #99aeda;
 }
 #credits .column {
   display: flex;
@@ -445,7 +480,7 @@ footer #school-logo {
 }
 
 #credits-footer {
-  color: #E4EAF6;
+  color: #e4eaf6;
   font-size: 16px;
   padding: 20px 0px;
 }
@@ -493,7 +528,7 @@ footer #school-logo {
   }
   header #navbar li {
     transition: color 0.25s;
-    color: #E4EAF6;
+    color: #e4eaf6;
     cursor: pointer;
     font-size: 24px;
   }
@@ -541,6 +576,12 @@ footer #school-logo {
   #credits .column {
     justify-content: flex-start;
     margin: 0px 15px;
+  }
+}
+
+@media (min-width: 1300px) {
+  body {
+    background-image: url(./images/background-image/neon-background-large.jpg);
   }
 }
 
