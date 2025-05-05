@@ -190,16 +190,6 @@ body {
 body.show {
   padding-top: 200px;
 }
-body::before {
-  content: "";
-  z-index: 2;
-  border-top: dashed 2px #e4eaf6;
-  border-right: dashed 2px #e4eaf6;
-  position: fixed;
-  height: 100px;
-  width: 97vw;
-  align-self: flex-start;
-}
 
 header {
   z-index: 1;
@@ -208,11 +198,13 @@ header {
   width: 100vw;
   height: 91px;
   background-color: #000000;
+  border-bottom: #ffddff solid 3px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 1px #ff52ff, 0 0 1px #ff52ff, 0 0 30px #ff52ff, 0 0 0px #ff52ff,
+    0 0 0px #ff52ff, 0 0 0px #ff52ff, 0 0 0px #ff52ff, 0 0 0px #ff52ff;
   transition-duration: 0.25s;
   transition-property: height;
 }
@@ -255,22 +247,12 @@ header #logo-text {
   max-width: 200px;
   cursor: pointer;
 }
-header #needle {
-  transition: top 0.25s;
-  position: fixed;
-  height: 75px;
-  top: 195px;
-  left: calc(97vw - 2px);
-}
 header.show {
   height: 15rem;
 }
 header.show #navbar {
   height: 100%;
   opacity: 1;
-}
-header.show #needle {
-  top: 304px;
 }
 
 #main-logo {
@@ -621,12 +603,6 @@ footer #school-logo {
   }
   header #navbar li:hover {
     color: white;
-  }
-  header #needle {
-    transition: none;
-    position: fixed;
-    height: 75px;
-    top: 195px;
   }
   #designer-page #collection-gallery .container {
     max-width: 400px;
