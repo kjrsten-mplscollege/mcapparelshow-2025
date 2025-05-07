@@ -93,7 +93,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 4.2rem;
+  font-size: 4rem;
   animation: pulsate 1.5s infinite alternate;
   border: 0.2rem solid #fff;
   border-radius: 2rem;
@@ -183,7 +183,7 @@ body {
     background-position: 70% center;
   }
   .neonTextTitle {
-    font-size: 3.15rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -203,8 +203,9 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  box-shadow: 0 0 1px #ff52ff, 0 0 1px #ff52ff, 0 0 30px #ff52ff, 0 0 0px #ff52ff,
-    0 0 0px #ff52ff, 0 0 0px #ff52ff, 0 0 0px #ff52ff, 0 0 0px #ff52ff;
+  box-shadow: 0 0 1px #ff52ff, 0 0 1px #ff52ff, 0 0 30px #ff52ff,
+    0 0 0px #ff52ff, 0 0 0px #ff52ff, 0 0 0px #ff52ff, 0 0 0px #ff52ff,
+    0 0 0px #ff52ff;
   transition-duration: 0.25s;
   transition-property: height;
 }
@@ -228,7 +229,7 @@ header #navbar ul li {
   margin: 5px 0;
   color: white;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 1.25rem;
 }
 header #navbar ul li:hover {
   transform: translateY(-5px);
