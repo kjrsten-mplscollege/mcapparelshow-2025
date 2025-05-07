@@ -368,6 +368,25 @@ footer #school-logo {
   font-size: 2.2rem;
 }
 
+.next-pink,
+.back-pink {
+  position: absolute;
+  right: 10%;
+  top: 140px;
+  background-image: url("images/icons/next-pink.png");
+  width: 68px;
+  height: 78px;
+  color: transparent;
+  background-size: 68px;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+.back-pink {
+  left: 10%;
+  background-image: url("images/icons/back-pink.png");
+}
+
 #designer-page #collection-gallery {
   margin-top: 15px;
   justify-content: center;
@@ -643,6 +662,7 @@ footer #school-logo {
     display: flex;
     flex-direction: column;
   }
+
   #credits {
     flex-direction: row;
     justify-content: space-around;
@@ -651,5 +671,22 @@ footer #school-logo {
   #credits .column {
     justify-content: flex-start;
     margin: 0px 15px;
+  }
+}
+
+/* For medium-small screens (mobile, ipad) */
+@media only screen and (max-width: 900px) {
+
+  .next-pink,
+  .back-pink {
+    right: 3%;
+    top: 120px;
+    width: 50px;
+    height: 58px;
+    background-size: 50px;
+  }
+  
+  .back-pink {
+    left: 3%;
   }
 }
