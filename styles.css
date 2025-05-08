@@ -56,6 +56,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -344,11 +345,12 @@ footer #school-logo {
   text-align: center;
 }
 #designer-page #name {
+  color: #e4eaf6;
   margin-top: 30px;
   font-size: 48px;
 }
 #designer-page #collection-name {
-  color: #99aeda;
+  color: #fdf;
   font-family: "Kufam-Regular", sans-serif;
   font-size: 2.2rem;
 }
