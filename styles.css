@@ -208,6 +208,7 @@ header {
     0 0 0px #ff52ff;
   transition-duration: 0.25s;
   transition-property: height;
+  z-index: 200;
 }
 header #navbar {
   overflow: hidden;
@@ -283,18 +284,7 @@ header.show #navbar {
   align-items: center;
   width: 284px;
 }
-/* #gallery .designer ::before {
-  content: "";
-  position: absolute;
-  left: -25px;
-  top: -25px;
-  z-index: -1;
-  width: 284px;
-  height: 554px;
-  background-color: #99AEDA;
-  border-radius: 40px;
-  opacity: 0.15;
-} */
+
 #gallery .designer img {
   cursor: pointer;
   width: 100%;
@@ -363,6 +353,25 @@ footer #school-logo {
   font-size: 2.2rem;
 }
 
+.next-pink,
+.back-pink {
+  position: absolute;
+  right: 10%;
+  top: 140px;
+  background-image: url("images/icons/next-pink.png");
+  width: 68px;
+  height: 78px;
+  color: transparent;
+  background-size: 68px;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+.back-pink {
+  left: 10%;
+  background-image: url("images/icons/back-pink.png");
+}
+
 #designer-page #collection-gallery {
   margin-top: 15px;
   justify-content: center;
@@ -420,18 +429,7 @@ footer #school-logo {
   align-items: top;
   padding: 80px 40px;
 }
-/* #designer-page #flex-horizontal::before {
-  content: "";
-  border-radius: 40px;
-  opacity: 0.15;
-  position: absolute;
-  z-index: -1;
-  left: calc(50% - 150px);
-  top: 65px;
-  height: 494px;
-  width: 250px;
-  background-color: #99AEDA;
-} */
+
 #designer-page #flex-horizontal #designer-headshot,
 #designerlogo {
   width: 250px;
@@ -632,6 +630,7 @@ footer #school-logo {
     display: flex;
     flex-direction: column;
   }
+
   #credits {
     flex-direction: row;
     justify-content: space-around;
@@ -640,5 +639,22 @@ footer #school-logo {
   #credits .column {
     justify-content: flex-start;
     margin: 0px 15px;
+  }
+}
+
+/* For medium-small screens (mobile, ipad) */
+@media only screen and (max-width: 900px) {
+
+  .next-pink,
+  .back-pink {
+    right: 3%;
+    top: 120px;
+    width: 50px;
+    height: 58px;
+    background-size: 50px;
+  }
+  
+  .back-pink {
+    left: 3%;
   }
 }
