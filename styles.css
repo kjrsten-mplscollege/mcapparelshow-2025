@@ -56,6 +56,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -93,7 +94,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 4.2rem;
+  font-size: 4rem;
   animation: pulsate 1.5s infinite alternate;
   border: 0.2rem solid #fff;
   border-radius: 2rem;
@@ -101,6 +102,40 @@ body {
   padding: 0.4em;
   box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #ffc108,
     0 0 0.8rem #ffc108, 0 0 2.8rem #ffc108, inset 0 0 1.3rem #ffc108;
+}
+.neonTextTitle2 {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #ff52ff,
+    0 0 82px #ff52ff, 0 0 92px #ff52ff, 0 0 102px #ff52ff, 0 0 151px #ff52ff;
+  font-family: "Kufam-Regular", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 4rem;
+  transition: ease-in-out .25s;
+  animation: pulsate2 1.5s infinite alternate;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  margin: 6rem 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #ff52ff,
+    0 0 0.8rem #ff52ff, 0 0 2.8rem #ff52ff, inset 0 0 1.3rem #ff52ff;
+}
+.neonTextTitle2:hover {
+  transform: translateY(-10px) scale(1.05);;
+  
+}
+.neonText {
+  color: #fff;
+  font-family: "Kufam-Regular", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 0.4em;
+}
+.neonText:hover {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #ff52ff,
+    0 0 500px #ff52ff, 0 0 2px #ff52ff, 0 0 2px #ff52ff, 0 0 2px #ff52ff;
 }
 
 /* Neon hover effect for divs */
@@ -170,8 +205,8 @@ body {
     background-image: url("./images/background-image/neon-background-small.jpg");
     background-position: 70% center;
   }
-  .neonTextTitle {
-    font-size: 3.15rem;
+  .neonTextTitle, .neonTextTitle2 {
+    font-size: 2.5rem;
   }
 }
 
@@ -186,11 +221,14 @@ header {
   width: 100vw;
   height: 91px;
   background-color: #000000;
+  border-bottom: #ffddff solid 3px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 1px #ff52ff, 0 0 1px #ff52ff, 0 0 30px #ff52ff,
+    0 0 0px #ff52ff, 0 0 0px #ff52ff, 0 0 0px #ff52ff, 0 0 0px #ff52ff,
+    0 0 0px #ff52ff;
   transition-duration: 0.25s;
   transition-property: height;
   z-index: 200;
@@ -215,7 +253,7 @@ header #navbar ul li {
   margin: 5px 0;
   color: white;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 1.25rem;
 }
 header #navbar ul li:hover {
   transform: translateY(-5px);
@@ -234,22 +272,12 @@ header #logo-text {
   max-width: 200px;
   cursor: pointer;
 }
-header #needle {
-  transition: top 0.25s;
-  position: fixed;
-  height: 75px;
-  top: 195px;
-  left: calc(97vw - 2px);
-}
 header.show {
   height: 15rem;
 }
 header.show #navbar {
   height: 100%;
   opacity: 1;
-}
-header.show #needle {
-  top: 304px;
 }
 
 #main-logo {
@@ -321,7 +349,7 @@ footer ul li {
   transition: all 0.25s;
 }
 footer ul li:hover {
-   transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 footer #school-logo {
   width: 100px;
@@ -339,11 +367,12 @@ footer #school-logo {
   text-align: center;
 }
 #designer-page #name {
+  color: #e4eaf6;
   margin-top: 30px;
   font-size: 48px;
 }
 #designer-page #collection-name {
-  color: #99aeda;
+  color: #fdf;
   font-family: "Kufam-Regular", sans-serif;
   font-size: 2.2rem;
 }
@@ -506,7 +535,7 @@ footer #school-logo {
 }
 
 #credits-title {
-  color: #99aeda;
+  color: #e4eaf6;
   font-family: "Trajan-Bold", sans-serif;
   padding-top: 50px;
 }
@@ -533,7 +562,7 @@ footer #school-logo {
 }
 #credits h2 {
   font-size: 30px;
-  color: #99aeda;
+  color: #ffddff;
 }
 #credits .column {
   display: flex;
@@ -597,12 +626,6 @@ footer #school-logo {
   }
   header #navbar li:hover {
     color: white;
-  }
-  header #needle {
-    transition: none;
-    position: fixed;
-    height: 75px;
-    top: 195px;
   }
   #designer-page #collection-gallery .container {
     max-width: 400px;

@@ -10,7 +10,6 @@
   </head>
   <body>
     <div class="neon-background"></div>
-    <div class="neon-background"></div>
     <header>
       <div id="logo">
         <img
@@ -27,13 +26,13 @@
       </div>
       <div id="navbar">
         <ul>
-          <li onclick="handleClick('#designers')">Designers</li>
-          <li onclick="handleClick('./show.html')">Show</li>
-          <li onclick="handleClick('./credits.html')">Credits</li>
+          <li class="neonText" onclick="handleClick('#designers')">Designers</li>
+          <li class="neonText" onclick="handleClick('./show.html')">Show</li>
+          <li class="neonText" onclick="handleClick('./credits.html')">Credits</li>
         </ul>
       </div>
     </header>
-    <h2 class="neonTextTitle">New Chapters</h2>
+    <h2 class="neonTextTitle">New Chapters: MC Apparel Show 2025</h2>
 
     <h1 id="designers">Our Designers</h1>
     <div id="gallery">
@@ -41,10 +40,20 @@
         <img
           src="./images/designers/Abby_Gilbertson.jpg"
           alt="Abby"
-          onclick="handleClick('./designers/abby.html')"
+          onclick="handleClick('./designers/abigail.html')"
         />
         <h2 onclick="handleClick('./designers/designer-page-template.html')">
           Abby
+        </h2>
+      </div>
+      <div class="designer neonHover">
+        <img
+          src="./images/designers/Wisdom.jpg"
+          alt="Wisdom"
+          onclick="handleClick('./designers/bonne.html')"
+        />
+        <h2 onclick="handleClick('./designers/designer-page-template26.html')">
+          Bonne
         </h2>
       </div>
       <div class="designer neonHover">
@@ -169,26 +178,6 @@
       </div>
       <div class="designer neonHover">
         <img
-          src="./images/designers/Mars-Paris_Swan.jpg"
-          alt="Mars-Paris"
-          onclick="handleClick('./designers/mars-paris.html')"
-        />
-        <h2 onclick="handleClick('./designers/designer-page-template14.html')">
-          Mars-Paris
-        </h2>
-      </div>
-      <div class="designer neonHover">
-        <img
-          src="./images/designers/Mars.jpg"
-          alt="Mars"
-          onclick="handleClick('./designers/mars.html')"
-        />
-        <h2 onclick="handleClick('./designers/designer-page-template16.html')">
-          Mars
-        </h2>
-      </div>
-      <div class="designer neonHover">
-        <img
           src="./images/designers/Mason_Abbas.jpg"
           alt="Mason"
           onclick="handleClick('./designers/mason.html')"
@@ -275,16 +264,6 @@
         />
         <h2 onclick="handleClick('./designers/designer-page-template25.html')">
           Treya
-        </h2>
-      </div>
-       <div class="designer neonHover">
-        <img
-          src="./images/designers/Wisdom.jpg"
-          alt="Wisdom"
-          onclick="handleClick('./designers/wisdom.html')"
-        />
-        <h2 onclick="handleClick('./designers/designer-page-template26.html')">
-          Wisdom
         </h2>
       </div>
        <div class="designer neonHover">
