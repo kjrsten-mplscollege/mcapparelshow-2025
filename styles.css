@@ -184,31 +184,7 @@ body {
       0 0 0.4rem #ff52ff, 0 0 1.4rem #ff52ff, inset 0 0 0.65rem #ff52ff;
   }
 }
-/* Neon Media Queries */
-/* For large screens (tablets) */
-@media (min-width: 1300px) {
-  body {
-    background-image: url(./images/background-image/neon-background-large.jpg);
-  }
-}
 
-/* For medium screens (tablets) */
-@media only screen and (max-width: 1200px) {
-  .neon-background {
-    background-image: url("./images/background-image/neon-background-medium.jpg");
-  }
-}
-
-/* For small screens (mobile) */
-@media only screen and (max-width: 768px) {
-  .neon-background {
-    background-image: url("./images/background-image/neon-background-small.jpg");
-    background-position: 70% center;
-  }
-  .neonTextTitle, .neonTextTitle2 {
-    font-size: 2.5rem;
-  }
-}
 
 body.show {
   padding-top: 200px;
@@ -260,16 +236,18 @@ header #navbar ul li:hover {
 }
 header #logo {
   width: 100%;
-  padding: 31px 25px 0px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
 }
 header #mobile-lines {
   width: 40px;
   cursor: pointer;
+  position: relative;
+  right: 30px;
 }
 header #logo-text {
-  max-width: 200px;
+  max-width: 300px;
   cursor: pointer;
 }
 header.show {
@@ -550,7 +528,7 @@ footer #school-logo {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  text-align: center;
+  /* text-align: center; */
 }
 #credits ul {
   list-style-type: none;
@@ -561,6 +539,10 @@ footer #school-logo {
   padding: 2px 0px;
   font-size: 20px;
 }
+#credits ul li ul li {
+  padding: 2px 0px 0px 20px;
+  font-size: 16px;
+}
 #credits h2 {
   font-size: 30px;
   color: #ffddff;
@@ -569,7 +551,7 @@ footer #school-logo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 #credits-footer {
@@ -682,5 +664,42 @@ footer #school-logo {
   
   .back-pink {
     left: 3%;
+  }
+}
+
+/* Neon Media Queries */
+/* For large screens (tablets) */
+@media (min-width: 1300px) {
+  body {
+    background-image: url('./images/background-image/neon-background-large.jpg');
+  }
+}
+
+/* For medium screens (tablets) */
+@media only screen and (max-width: 1200px) {
+  .neon-background {
+    background-image: url("./images/background-image/neon-background-medium.jpg");
+  }
+}
+
+/* For small screens (mobile) */
+@media only screen and (max-width: 768px) {
+  .neon-background {
+    background-image: url("./images/background-image/neon-background-small.jpg");
+    background-position: 70% center;
+  }
+  .neonTextTitle, .neonTextTitle2 {
+    font-size: 2.5rem;
+  }
+  header #logo {
+    padding: 0;
+  }
+  header #logo-text {
+    max-width: 300px;
+  }
+
+  header #mobile-lines {
+    position: relative;
+    right: 20px;
   }
 }

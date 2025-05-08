@@ -9,29 +9,25 @@
   </head>
   <body>
     <div class="neon-background"></div>
+
     <header>
       <div id="logo">
-        <img
-          src="./images/logos/new-chapters-transparen.png"
+        <a href="index.html"><img
+          src="images/logos/new-chapters-transparen.png"
           alt="New Chapters Text Logo"
           id="logo-text"
-          onclick="handleClick('./index.html')"
-        />
+        /></a>
         <img
-          src="./images/icons/mobile-lines.svg"
+          src="images/icons/mobile-lines.svg"
           onclick="handleNavToggle()"
           id="mobile-lines"
         />
       </div>
       <div id="navbar">
         <ul>
-          <li class="neonText" onclick="handleClick('./index.html#designers')">
-            Designers
-          </li>
-          <li class="neonText" onclick="handleClick('./show.html')">Show</li>
-          <li class="neonText" onclick="handleClick('./credits.html')">
-            Credits
-          </li>
+          <li class="neonText"><a href="index.html#designers">Designers</a></li>
+          <li class="neonText"><a href="show.html">Show</a></li>
+          <li class="neonText"><a href="credits.html">Credits</a></li>
         </ul>
       </div>
     </header>
@@ -48,38 +44,14 @@
     <footer>
       <h1>PAST SHOWS</h1>
       <ul>
-        <li onclick="handleClick('https://2023.mcappareltechnologies.com/')">
-          2023
-        </li>
-        <li onclick="handleClick('https://2022.mcappareltechnologies.com/')">
-          2022
-        </li>
-        <li onclick="handleClick('https://2021.mcappareltechnologies.com/')">
-          2021
-        </li>
-        <li onclick="handleClick('https://tempus.mcappareltechnologies.com/')">
-          2020
-        </li>
-        <li
-          onclick="handleClick('https://intothefray.mcappareltechnologies.com/index.html')"
-        >
-          2019
-        </li>
-        <li
-          onclick="handleClick('https://thirteen.mcappareltechnologies.com/index.html')"
-        >
-          2018
-        </li>
-        <li onclick="handleClick('https://equinox.mcappareltechnologies.com/')">
-          2017
-        </li>
+          <li><a href='https://2024.mcappareltechnologies.com/' target="_blank">2024</a></li>
+          <li><a href='https://2023.mcappareltechnologies.com/' target="_blank">2023</a></li>
+          <li><a href='https://2022.mcappareltechnologies.com/' target="_blank">2022</a></li>
+          <li><a href='https://2021.mcappareltechnologies.com/' target="_blank">2021</a></li>
+          <li><a href='https://tempus.mcappareltechnologies.com/' target="_blank">2020</a></li>
+          <li><a href='https://intothefray.mcappareltechnologies.com/' target="_blank">2019</a></li>
       </ul>
-      <a href="https://minneapolis.edu/" target="_blank"
-        ><img
-          src="./images/logos/mc-logo-black.svg"
-          alt="Minneapolis College Logo"
-          id="school-logo"
-      /></a>
-    </footer>
+      <a href="https://minneapolis.edu/" target="_blank"><img src="images/logos/mc-logo-black.svg" alt="Minneapolis College Logo" id="school-logo"></a>
+  </footer>
   </body>
 </html>
